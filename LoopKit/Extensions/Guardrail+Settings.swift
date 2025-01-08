@@ -79,7 +79,7 @@ public extension Guardrail where Value == HKQuantity {
     }
     
     static let insulinSensitivity = Guardrail(
-        absoluteBounds: (9.1)...(900.9),
+        absoluteBounds: (9.1)...(1440.1),
         recommendedBounds: (15.1)...(399.9),
         unit: HKUnit.milligramsPerDeciliter.unitDivided(by: .internationalUnit()),
         startingSuggestion: 50
